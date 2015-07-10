@@ -23,15 +23,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-/*- (IBAction)wantsToLogin:(id)sender {
-    if(self.Email.text isEqualToString:@"daktoa101@gmail.com" && self.Password.text isEqualToString:@"7637335"){
+- (IBAction)wantsToLogin:(id)sender {
+    if([self.Email.text isEqual: @"daktoa101@gmail.com"] && [self.Password.text isEqual: @"7637335"]){
         NSLog(@"Login Successful");
     }else{
         NSLog(@"Login Unsuccessful");
     }
 }
- */
-//this is a test change
 
 /*
 #pragma mark - Navigation

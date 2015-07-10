@@ -106,7 +106,7 @@
                                 <rect key="frame" x="16" y="244" width="568" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Log-In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktu-NT-hgi">
                                 <rect key="frame" x="235" y="127" width="130" height="33"/>
@@ -143,9 +143,7 @@
                     <navigationItem key="navigationItem" id="VfJ-l8-5oc"/>
                     <connections>
                         <outlet property="Email" destination="S8o-HU-Zdn" id="QZo-z0-tNU"/>
-                        <outlet property="LoginButton" destination="2yr-1a-mlq" id="myJ-dA-MY5"/>
                         <outlet property="Password" destination="hIz-Rx-hvm" id="rk9-dO-2Uv"/>
-                        <outlet property="PasswordField" destination="hIz-Rx-hvm" id="VN3-TF-i4H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFv-AW-Jy7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -196,12 +194,12 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xxz-gi-Od2">
                                 <rect key="frame" x="16" y="282" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C8y-FR-1fX">
                                 <rect key="frame" x="16" y="320" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sign-Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gy0-Wx-ued">
                                 <rect key="frame" x="235" y="123" width="130" height="33"/>
