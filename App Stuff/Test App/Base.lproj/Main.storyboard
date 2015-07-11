@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="73P-uv-jdw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="15A215h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="73P-uv-jdw">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -28,11 +29,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_004.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cHL-Gt-DSn">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="gradient.png" translatesAutoresizingMaskIntoConstraints="NO" id="cHL-Gt-DSn">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqw-61-nze">
                                 <rect key="frame" x="272" y="466" width="57" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="GemFontOne" family="GemFont One" pointSize="15"/>
                                 <state key="normal" title="Sign-Up">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,6 +47,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qr0-NM-4By">
                                 <rect key="frame" x="278" y="428" width="45" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="GemFontOne" family="GemFont One" pointSize="15"/>
                                 <state key="normal" title="Log-In">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,11 +59,13 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Harmony" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9G-85-zGe">
                                 <rect key="frame" x="235" y="129" width="130" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="GemFontOne" family="GemFont One" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="qr0-NM-4By" secondAttribute="centerX" id="Aoh-qK-shm"/>
@@ -94,28 +100,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_004.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CH1-he-Bh8">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient.png" translatesAutoresizingMaskIntoConstraints="NO" id="CH1-he-Bh8">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-Mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8o-HU-Zdn">
-                                <rect key="frame" x="16" y="206" width="568" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hIz-Rx-hvm">
-                                <rect key="frame" x="16" y="244" width="568" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Log-In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktu-NT-hgi">
-                                <rect key="frame" x="235" y="127" width="130" height="33"/>
-                                <fontDescription key="fontDescription" name="GemFontOne" family="GemFont One" pointSize="32"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yr-1a-mlq">
                                 <rect key="frame" x="278" y="282" width="45" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="GemFontOne" family="GemFont One" pointSize="15"/>
                                 <state key="normal" title="Log-In">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -125,7 +116,28 @@
                                     <action selector="wantsToLogin:" destination="EpQ-da-gl6" eventType="touchUpInside" id="yTr-lQ-OP7"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hIz-Rx-hvm">
+                                <rect key="frame" x="16" y="244" width="568" height="30"/>
+                                <animations/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-Mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S8o-HU-Zdn">
+                                <rect key="frame" x="16" y="206" width="568" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Log-In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktu-NT-hgi">
+                                <rect key="frame" x="235" y="127" width="130" height="45"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="GemFontOne" family="GemFont One" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Ktu-NT-hgi" secondAttribute="centerX" id="8zp-er-9Jg"/>
@@ -133,7 +145,7 @@
                             <constraint firstItem="hIz-Rx-hvm" firstAttribute="trailing" secondItem="DhB-In-DiF" secondAttribute="trailingMargin" id="AyH-Ff-4WK"/>
                             <constraint firstAttribute="centerY" secondItem="hIz-Rx-hvm" secondAttribute="centerY" constant="41" id="KKN-iC-5iQ"/>
                             <constraint firstItem="hIz-Rx-hvm" firstAttribute="leading" secondItem="DhB-In-DiF" secondAttribute="leadingMargin" id="Utm-Ed-1mk"/>
-                            <constraint firstAttribute="centerY" secondItem="Ktu-NT-hgi" secondAttribute="centerY" constant="156.5" id="dgf-Gw-5XI"/>
+                            <constraint firstAttribute="centerY" secondItem="Ktu-NT-hgi" secondAttribute="centerY" constant="150.5" id="dgf-Gw-5XI"/>
                             <constraint firstAttribute="centerY" secondItem="2yr-1a-mlq" secondAttribute="centerY" constant="3" id="hIj-ss-jvf"/>
                             <constraint firstAttribute="centerY" secondItem="S8o-HU-Zdn" secondAttribute="centerY" constant="79" id="i7I-Oa-t4d"/>
                             <constraint firstItem="S8o-HU-Zdn" firstAttribute="trailing" secondItem="DhB-In-DiF" secondAttribute="trailingMargin" id="k9f-Ej-Dpk"/>
@@ -154,9 +166,13 @@
         <scene sceneID="Te3-GN-wBr">
             <objects>
                 <navigationController id="73P-uv-jdw" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D7B-cG-yIm">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="D7B-cG-yIm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="f3k-Rb-lcH"/>
@@ -178,37 +194,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_004.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="omX-6L-NyL">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gradient.png" translatesAutoresizingMaskIntoConstraints="NO" id="omX-6L-NyL">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htj-P1-f5b">
                                 <rect key="frame" x="16" y="206" width="568" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-Mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMs-xd-on7">
                                 <rect key="frame" x="16" y="244" width="568" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xxz-gi-Od2">
                                 <rect key="frame" x="16" y="282" width="568" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C8y-FR-1fX">
                                 <rect key="frame" x="16" y="320" width="568" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sign-Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gy0-Wx-ued">
-                                <rect key="frame" x="235" y="123" width="130" height="33"/>
+                                <rect key="frame" x="235" y="123" width="130" height="39"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="GemFontOne" family="GemFont One" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjR-b2-0Zx">
                                 <rect key="frame" x="269" y="358" width="63" height="30"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="GemFontOne" family="GemFont One" pointSize="15"/>
                                 <state key="normal" title="Sign-Up">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -216,6 +239,7 @@
                                 </state>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="WjR-b2-0Zx" secondAttribute="centerY" constant="-73" id="5Pc-er-fde"/>
@@ -232,7 +256,7 @@
                             <constraint firstItem="C8y-FR-1fX" firstAttribute="trailing" secondItem="HqH-jE-3RR" secondAttribute="trailingMargin" id="awH-Vw-0ln"/>
                             <constraint firstAttribute="centerY" secondItem="TMs-xd-on7" secondAttribute="centerY" constant="41" id="awV-7h-fCd"/>
                             <constraint firstItem="htj-P1-f5b" firstAttribute="leading" secondItem="HqH-jE-3RR" secondAttribute="leadingMargin" id="e74-JW-Rqo"/>
-                            <constraint firstAttribute="centerY" secondItem="Gy0-Wx-ued" secondAttribute="centerY" constant="160.5" id="hAp-dj-odE"/>
+                            <constraint firstAttribute="centerY" secondItem="Gy0-Wx-ued" secondAttribute="centerY" constant="157.5" id="hAp-dj-odE"/>
                             <constraint firstItem="TMs-xd-on7" firstAttribute="trailing" secondItem="HqH-jE-3RR" secondAttribute="trailingMargin" id="uDY-9j-xeh"/>
                         </constraints>
                     </view>
@@ -244,7 +268,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg_004.jpg" width="1800" height="1198"/>
+        <image name="gradient.png" width="1000" height="1000"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
